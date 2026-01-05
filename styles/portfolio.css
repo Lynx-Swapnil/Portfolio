@@ -33,6 +33,16 @@
     font-weight: bold;
     cursor: pointer;
 }
+.btn-c{
+    background-color:#FFF8F3;
+    border: 1px solid #FD6E0A;
+    padding: 18px 35px;
+    border-radius: 5px;
+    color: #FD6E0A;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
 .section-heading{
      max-width: 827px;
      text-align: center;
