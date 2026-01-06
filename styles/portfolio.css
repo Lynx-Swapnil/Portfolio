@@ -1,3 +1,19 @@
+/* CSS Variables for better maintainability */
+:root {
+  --primary-color: #fd6e0a;
+  --bg-light: #fff8f3;
+  --text-dark: #181818;
+  --text-medium: #474747;
+  --text-light: #757575;
+  --white: #ffffff;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 5rem;
+  --border-radius: 5px;
+  --max-width: 1140px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,22 +31,22 @@ html {
   font-optical-sizing: auto;
 }
 .logo h2 {
-  font-size: 45px;
+  font-size: 2.8rem;
   font-weight: 900;
 }
 .color-orange {
-  color: #fd6e0a;
+  color: var(--primary-color);
 }
 .text-center {
   text-align: center;
 }
 .btn {
-  background-color: #fd6e0a;
+  background-color: var(--primary-color);
   border: none;
-  padding: 18px 35px;
-  border-radius: 5px;
-  color: #ffffff;
-  font-size: 20px;
+  padding: 1.125rem 2.2rem;
+  border-radius: var(--border-radius);
+  color: var(--white);
+  font-size: 1.25rem;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -41,12 +57,12 @@ html {
   box-shadow: 0 4px 12px rgba(253, 110, 10, 0.3);
 }
 .btn-c {
-  background-color: #fff8f3;
-  border: 1px solid #fd6e0a;
-  padding: 18px 35px;
-  border-radius: 5px;
-  color: #fd6e0a;
-  font-size: 20px;
+  background-color: var(--bg-light);
+  border: 1px solid var(--primary-color);
+  padding: 1.125rem 2.2rem;
+  border-radius: var(--border-radius);
+  color: var(--primary-color);
+  font-size: 1.25rem;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -61,29 +77,29 @@ html {
   margin: 0px auto;
 }
 .section-heading h2 {
-  font-size: 35px;
-  margin-bottom: 30px;
-  color: #181818;
+  font-size: 2.2rem;
+  margin-bottom: 1.875rem;
+  color: var(--text-dark);
 }
 .section-heading p {
-  font-size: 18px;
-  margin-bottom: 30px;
-  line-height: 30px;
-  color: #757575;
+  font-size: 1.125rem;
+  margin-bottom: 1.875rem;
+  line-height: 1.875rem;
+  color: var(--text-light);
 }
 /* main styles */
 
 header {
-  background-color: #fff8f3;
-  padding-top: 48px;
+  background-color: var(--bg-light);
+  padding-top: 3rem;
   background: url("../images/developer.png"), url("../images/header_bg.png"),
-    #fff8f3;
+    var(--bg-light);
   background-position: 23px 38px, bottom right;
   background-repeat: no-repeat;
 }
 nav {
   width: 90%;
-  max-width: 1140px;
+  max-width: var(--max-width);
   margin: 0px auto;
   display: flex;
   justify-content: space-between;
@@ -92,54 +108,54 @@ nav {
 }
 nav .menu {
   display: flex;
-  gap: 51px;
+  gap: 3.2rem;
   list-style: none;
   align-items: center;
 }
-.menu li a {
-  font-size: 20px;
-  color: #474747;
+nav .menu li a {
+  font-size: 1.25rem;
+  color: var(--text-medium);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 nav .menu li a:hover {
-  color: #fd6e0a;
+  color: var(--primary-color);
 }
 #banner {
   width: 90%;
-  max-width: 1140px;
-  margin: 48px auto 0;
-  padding: 0 16px;
+  max-width: var(--max-width);
+  margin: 3rem auto 0;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 32px;
+  gap: 2rem;
 }
 #banner .banner-content {
   flex: 1;
   max-width: 585px;
 }
 #banner .banner-content h2 {
-  font-size: 45px;
+  font-size: 2.8rem;
   font-weight: 600;
-  color: #474747;
-  margin-bottom: 48px;
+  color: var(--text-medium);
+  margin-bottom: 3rem;
 }
 #banner .banner-content h1 {
-  font-size: 85px;
+  font-size: 5.3rem;
   font-weight: bold;
-  color: #181818;
-  margin-bottom: 20px;
+  color: var(--text-dark);
+  margin-bottom: 1.25rem;
 }
 #banner .banner-content p {
-  font-size: 18px;
-  color: #757575;
-  line-height: 30px;
-  margin-bottom: 30px;
+  font-size: 1.125rem;
+  color: var(--text-light);
+  line-height: 1.875rem;
+  margin-bottom: 1.875rem;
 }
 #banner .banner-content div {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 #banner .banner-image {
@@ -155,50 +171,50 @@ nav .menu li a:hover {
 #about,
 #skills,
 #resume {
-  padding-top: 128px;
+  padding-top: 8rem;
 }
 #about .about-container {
   width: 90%;
-  max-width: 1140px;
+  max-width: var(--max-width);
   margin: 0px auto;
   text-align: center;
-  background-color: #fff8f3;
-  padding: 128px 32px;
+  background-color: var(--bg-light);
+  padding: 8rem 2rem;
   border-radius: 10px;
 }
 #about .about-container .about-info {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .about-info p {
-  font-size: 20px;
-  color: #757575;
-  line-height: 30px;
+  font-size: 1.25rem;
+  color: var(--text-light);
+  line-height: 1.875rem;
 }
 #about .about-container .about-info h4 {
-  font-size: 20px;
-  line-height: 30px;
-  color: #474747;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: var(--text-medium);
 }
 #skills .skills-container {
   width: 90%;
-  max-width: 1140px;
+  max-width: var(--max-width);
   margin: 0px auto;
-  padding: 0 16px;
+  padding: 0 1rem;
 }
 #skills .skills-container .skill-box {
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
   justify-content: space-between;
-  margin-top: 48px;
+  margin-top: 3rem;
   flex-wrap: wrap;
 }
 #skills .skills-container .skill-box .skill-card {
-  background-color: #ffffff;
-  padding: 30px;
+  background-color: var(--white);
+  padding: 1.875rem;
   flex: 1;
   min-width: 250px;
   box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.1);
@@ -211,26 +227,26 @@ nav .menu li a:hover {
 }
 #skills .skills-container .skill-box .skill-card img {
   max-width: 44px;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 #skills .skills-container .skill-box .skill-card h3 {
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: #474747;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: var(--text-medium);
 }
 #skills .skills-container .skill-box .skill-card p {
-  font-size: 16px;
-  color: #757575;
-  line-height: 28px;
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.75rem;
 }
 
 #resume .resume-container {
   width: 90%;
-  max-width: 1140px;
-  margin: 112px auto 0px;
-  padding: 0 16px;
+  max-width: var(--max-width);
+  margin: 7rem auto 0px;
+  padding: 0 1rem;
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 #resume .resume-container > div {
@@ -238,47 +254,47 @@ nav .menu li a:hover {
   min-width: 300px;
 }
 #resume .resume-container .section-title {
-  font-size: 30px;
-  color: #474747;
-  margin-bottom: 30px;
+  font-size: 1.875rem;
+  color: var(--text-medium);
+  margin-bottom: 1.875rem;
 }
 .resume-card {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 .resume-card .card-title {
-  font-size: 25px;
+  font-size: 1.56rem;
   font-weight: bold;
-  color: #474747;
-  margin-bottom: 10px;
+  color: var(--text-medium);
+  margin-bottom: 0.625rem;
 }
 .resume-card .card-info {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  color: #757575;
-  margin-bottom: 20px;
+  color: var(--text-light);
+  margin-bottom: 1.25rem;
 }
 .resume-card .card-text {
-  font-size: 16px;
-  line-height: 28px;
-  color: #757575;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: var(--text-light);
 }
 .resume-container hr {
-  margin: 30px 0px;
+  margin: 1.875rem 0px;
   border: none;
   border-top: 1px solid #e0e0e0;
 }
 footer {
-  background-color: #fff8f3;
-  padding: 128px 0px;
-  margin-top: 128px;
+  background-color: var(--bg-light);
+  padding: 8rem 0px;
+  margin-top: 8rem;
 }
 footer .footer-container {
   width: 90%;
-  max-width: 1140px;
+  max-width: var(--max-width);
   margin: 0px auto;
-  padding: 0 16px;
+  padding: 0 1rem;
   display: flex;
-  gap: 112px;
+  gap: 7rem;
   flex-wrap: wrap;
 }
 .footer-container .social {
@@ -290,19 +306,19 @@ footer .footer-container {
   min-width: 300px;
 }
 .footer-container p {
-  font-size: 16px;
-  color: #757575;
-  line-height: 28px;
-  margin-bottom: 30px;
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.75rem;
+  margin-bottom: 1.875rem;
 }
 .footer-container h2 {
   font-weight: bold;
-  color: #474747;
-  margin-bottom: 30px;
-  font-size: 32px;
+  color: var(--text-medium);
+  margin-bottom: 1.875rem;
+  font-size: 2rem;
 }
 .footer-container .icons a {
-  margin-right: 24px;
+  margin-right: 1.5rem;
   display: inline-block;
   transition: transform 0.3s ease;
 }
@@ -314,13 +330,13 @@ footer .footer-container {
 .footer-container form textarea {
   width: 100%;
   max-width: 461px;
-  padding: 18px 20px;
-  margin-bottom: 24px;
+  padding: 1.125rem 1.25rem;
+  margin-bottom: 1.5rem;
   border: none;
-  border-radius: 5px;
-  color: #757575;
+  border-radius: var(--border-radius);
+  color: var(--text-light);
   font-family: inherit;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .footer-container form textarea {
   resize: vertical;
