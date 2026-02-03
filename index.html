@@ -32,6 +32,17 @@
 
 <body class="font-open-sans">
 
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <h2>Swap<span class="color-orange">n</span>il</h2>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+
     <header>
         <nav class="container">
             <div class="logo">
@@ -51,9 +62,13 @@
             <div class="banner-content">
                 <h2>Hi, I am</h2>
                 <h1>Didarul Alam Swapnil</h1>
-                <p>A passionate Frontend Web Developer focused on creating clean, responsive websites with HTML, CSS, and JavaScript. I love turning ideas into interactive digital experiences.</p>
+                <p class="typing-container">
+                    <span class="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </p>
+                <p class="banner-description">A passionate Frontend Web Developer focused on creating clean, responsive websites with HTML, CSS, and JavaScript. I love turning ideas into interactive digital experiences.</p>
                 <div class="btn-group">
-                    <a href="#" id="download-cv"><button class="btn" aria-label="Download my CV"><i class="fa-solid fa-download"></i> Download CV</button></a>
+                    <a href="assets/Didarul_Alam_Swapnil_CV.pdf" download="Didarul_Alam_Swapnil_CV.pdf"><button class="btn" aria-label="Download my CV"><i class="fa-solid fa-download"></i> Download CV</button></a>
                     <a href="#contact"><button class="btn" aria-label="Contact me"><i class="fa-solid fa-phone"></i> Contact</button></a>
                 </div>
             </div>
@@ -63,6 +78,32 @@
         </section>
 
     </header>
+
+    <!-- Statistics Section -->
+    <section id="stats">
+        <div class="stats-container container">
+            <div class="stat-item">
+                <i class="fa-solid fa-code"></i>
+                <h3 class="stat-number" data-target="15">0</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3 class="stat-number" data-target="3">0</h3>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+                <i class="fa-solid fa-layer-group"></i>
+                <h3 class="stat-number" data-target="10">0</h3>
+                <p>Technologies</p>
+            </div>
+            <div class="stat-item">
+                <i class="fa-solid fa-mug-hot"></i>
+                <h3 class="stat-number" data-target="500">0</h3>
+                <p>Cups of Coffee</p>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section id="about">
@@ -194,6 +235,139 @@
         </div>
     </section>
 
+    <!-- Skills Progress Section -->
+    <section id="skills-progress">
+        <div class="skills-progress-container container">
+            <div class="section-heading">
+                <h2>My Skills</h2>
+                <p>Here's a breakdown of my technical proficiency across different frontend technologies and tools.</p>
+            </div>
+
+            <div class="skills-bars">
+                <div class="skill-bar-item">
+                    <div class="skill-info">
+                        <span class="skill-name">HTML5</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="95"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-item">
+                    <div class="skill-info">
+                        <span class="skill-name">CSS3 & Responsive Design</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-item">
+                    <div class="skill-info">
+                        <span class="skill-name">JavaScript (ES6+)</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="80"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Git & Version Control</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="85"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Figma & Web Design</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="75"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Bootstrap & Tailwind</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="70"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies">
+        <div class="technologies-container container">
+            <div class="section-heading">
+                <h2>Technologies & Tools</h2>
+                <p>The technologies and tools I use daily to bring ideas to life and build amazing web experiences.</p>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fa-brands fa-html5"></i>
+                    <h4>HTML5</h4>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h4>CSS3</h4>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-js"></i>
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-react"></i>
+                    <h4>React</h4>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h4>Git</h4>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-github"></i>
+                    <h4>GitHub</h4>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h4>Bootstrap</h4>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-sass"></i>
+                    <h4>Sass</h4>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-figma"></i>
+                    <h4>Figma</h4>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-npm"></i>
+                    <h4>NPM</h4>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-solid fa-code"></i>
+                    <h4>VS Code</h4>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-node-js"></i>
+                    <h4>Node.js</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Resume Section -->
     <section id="resume">
@@ -248,24 +422,84 @@
         </div>
 
         <div class="text-center">
-            <button class="btn" aria-label="Download my CV as PDF"><i class="fa-solid fa-download"></i> Download CV</button>
+            <a href="assets/Didarul_Alam_Swapnil_CV.pdf" download="Didarul_Alam_Swapnil_CV.pdf"><button class="btn" aria-label="Download my CV as PDF"><i class="fa-solid fa-download"></i> Download CV</button></a>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="contact-info">
+        <div class="contact-info-container container">
+            <div class="section-heading">
+                <h2>Get In Touch</h2>
+                <p>Feel free to reach out to me through any of these channels. I'm always open to discussing new projects and opportunities.</p>
+            </div>
+
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>lynxswapnil@gmail.com</p>
+                    <a href="mailto:lynxswapnil@gmail.com" class="contact-link">Send Email</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+880 123 456 7890</p>
+                    <a href="tel:+8801234567890" class="contact-link">Call Now</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Dhaka, Bangladesh</p>
+                    <a href="#" class="contact-link">View on Map</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me</p>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="contact-link">View Profile</a>
+                </div>
+            </div>
         </div>
     </section>
 
 
     <footer id="contact">
         <section class="footer-container container">
-            <div class="social">
-                <h2>Let's Connect</h2>
-                <p>I'm currently open to new opportunities and freelance projects. Feel free to reach out through the contact form or connect with me on social media. I'll get back to you as soon as possible!</p>
+            <div class="footer-content">
+                <div class="social">
+                    <h2>Let's Connect</h2>
+                    <p>I'm currently open to new opportunities and freelance projects. Feel free to reach out through the contact form or connect with me on social media. I'll get back to you as soon as possible!</p>
 
-                <div class="icons">
-                    <a href="#" aria-label="Visit my Facebook profile"><img src="images/icons/facebook.png" alt="Facebook icon"></a>
-                    <a href="#" aria-label="Visit my Twitter profile"><img src="images/icons/twitter.png" alt="Twitter icon"></a>
-                    <a href="#" aria-label="Visit my Instagram profile"><img src="images/icons/insta.png" alt="Instagram icon"></a>
+                    <div class="icons">
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Visit my Twitter profile"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="mailto:lynxswapnil@gmail.com" aria-label="Send me an email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+
+                    <div class="quick-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#resume">Resume</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                 <h2>Send Me a Message</h2>
                 <div>
                     <label for="contact-name" class="hide">Your Name</label>
@@ -281,8 +515,20 @@
                 </div>
                 <input class="btn" type="submit" value="Submit" aria-label="Submit contact form">
             </form>
+            </div>
         </section>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Didarul Alam Swapnil. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <script src="scripts/main.js"></script>
 </body>
