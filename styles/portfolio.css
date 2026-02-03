@@ -322,7 +322,6 @@ body {
     min-width: 320px;
     position: relative;
 }
-
 header {
     background-color: var(--bg-secondary);
     background: url("../images/developer.png"), url("../images/header_bg.png"), var(--bg-secondary);
