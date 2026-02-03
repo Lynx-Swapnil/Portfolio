@@ -151,27 +151,70 @@ img {
     color: #FD6E0A
 }
 
-.theme-btn {
-    background: transparent;
-    border: 2px solid var(--accent-color);
-    padding: 10px 14px;
-    border-radius: 50%;
-    font-size: 18px;
-    color: var(--accent-color);
-    cursor: pointer;
-    transition: all 0.3s ease;
+/* Theme Toggle Switch */
+.theme-switch-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
+    gap: 10px;
 }
 
-.theme-btn:hover,
-.theme-btn:focus-visible {
+.theme-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    min-width: 85px;
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
     background-color: var(--accent-color);
-    color: white;
-    transform: rotate(20deg);
+}
+
+input:checked + .slider:before {
+    transform: translateX(28px);
+}
+
+.slider:after {
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    font-size: 16px;
 }
 
 .btn {

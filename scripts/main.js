@@ -1,31 +1,26 @@
 // Dark Mode Toggle
 const themeToggle = document.getElementById('theme-toggle');
+const themeLabel = document.getElementById('theme-label');
 const htmlElement = document.documentElement;
-const themeIcon = themeToggle.querySelector('i');
 
 // Check for saved theme preference or default to light mode
 const currentTheme = localStorage.getItem('theme') || 'light';
 htmlElement.setAttribute('data-theme', currentTheme);
-updateThemeIcon(currentTheme);
 
-themeToggle.addEventListener('click', () => {
-    const theme = htmlElement.getAttribute('data-theme');
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    
+// Set checkbox state and label based on current theme
+if (currentTheme === 'dark') {
+    themeToggle.checked = true;
+    themeLabel.textContent = 'Dark Mode';
+} else {
+    themeLabel.textContent = 'Light Mode';
+}
+
+themeToggle.addEventListener('change', () => {
+    const newTheme = themeToggle.checked ? 'dark' : 'light';
     htmlElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
+    themeLabel.textContent = newTheme === 'dark' ? 'Dark Mode' : 'Light Mode';
 });
-
-function updateThemeIcon(theme) {
-    if (theme === 'dark') {
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
-    } else {
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-    }
-}
 
 // Preloader
 window.addEventListener('load', () => {
