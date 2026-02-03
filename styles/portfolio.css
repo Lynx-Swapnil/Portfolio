@@ -1259,10 +1259,10 @@ footer {
     }
 
     header {
-        background: url(../images/header_bg.png), var(--bg-secondary);
-        background-position: bottom right;
-        background-repeat: no-repeat;
-        background-size: contain;
+        background: url(../images/developer.png), url(../images/header_bg.png), var(--bg-secondary);
+        background-position: 20px bottom, bottom right;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 250px, contain;
         padding-top: 26px;
     }
 
