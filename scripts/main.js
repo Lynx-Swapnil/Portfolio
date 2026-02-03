@@ -22,6 +22,71 @@ themeToggle.addEventListener('change', () => {
     themeLabel.textContent = newTheme === 'dark' ? 'Dark Mode' : 'Light Mode';
 });
 
+// Mobile Menu Toggle
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const menu = document.querySelector('nav .menu');
+const menuLinks = document.querySelectorAll('nav .menu a');
+const menuOverlay = document.querySelector('.mobile-menu-overlay');
+
+if (mobileMenuToggle) {
+    // Toggle menu function
+    const toggleMenu = (shouldOpen) => {
+        const isOpening = shouldOpen !== undefined ? shouldOpen : !menu.classList.contains('active');
+        
+        if (isOpening) {
+            mobileMenuToggle.classList.add('active');
+            menu.classList.add('active');
+            menuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        } else {
+            mobileMenuToggle.classList.remove('active');
+            menu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    };
+
+    // Toggle on button click
+    mobileMenuToggle.addEventListener('click', () => {
+        toggleMenu();
+    });
+
+    // Close menu when clicking on a link
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            toggleMenu(false);
+        });
+    });
+
+    // Close menu when clicking overlay
+    if (menuOverlay) {
+        menuOverlay.addEventListener('click', () => {
+            toggleMenu(false);
+        });
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!menu.contains(e.target) && !mobileMenuToggle.contains(e.target) && menu.classList.contains('active')) {
+            toggleMenu(false);
+        }
+    });
+
+    // Close menu on window resize if wider than 768px
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            toggleMenu(false);
+        }
+    });
+
+    // Close menu on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && menu.classList.contains('active')) {
+            toggleMenu(false);
+        }
+    });
+}
+
 // Preloader
 window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');

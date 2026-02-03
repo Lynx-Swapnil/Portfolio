@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="description" content="Didarul Alam Swapnil - Frontend Web Developer specializing in HTML, CSS, and JavaScript. View my portfolio of responsive web projects.">
     
     <!-- Open Graph Meta Tags -->
@@ -35,6 +35,9 @@
     <!-- Scroll Progress Bar -->
     <div id="scroll-progress"></div>
 
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader">
@@ -48,6 +51,12 @@
             <div class="logo">
                 <h2>Swap<span class="color-orange">n</span>il</h2>
             </div>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
             <ul class="menu">
                 <li><a href="#projects">Projects</a></li>
