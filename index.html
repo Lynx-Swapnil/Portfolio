@@ -5,6 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Didarul Alam Swapnil - Frontend Web Developer specializing in HTML, CSS, and JavaScript. View my portfolio of responsive web projects.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Didarul Alam Swapnil - Frontend Web Developer">
+    <meta property="og:description" content="Passionate Frontend Developer focused on creating clean, responsive websites with HTML, CSS, and JavaScript.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/swapnil-professional-photo-no-bg.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Didarul Alam Swapnil - Frontend Web Developer">
+    <meta name="twitter:description" content="Passionate Frontend Developer focused on creating clean, responsive websites.">
+    
     <title>Didarul Alam Swapnil - Frontend Web Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,9 +39,11 @@
             </div>
 
             <ul class="menu">
-                <li><a href="#skills">Portfolio</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#resume">Resume</a></li>
-                <li><button class="btn" aria-label="Contact me for work opportunities">Hire Me</button></li>
+                <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button></li>
+                <li><a href="#contact"><button class="btn" aria-label="Contact me for work opportunities">Contact Me</button></a></li>
             </ul>
         </nav>
 
@@ -39,8 +53,8 @@
                 <h1>Didarul Alam Swapnil</h1>
                 <p>A passionate Frontend Web Developer focused on creating clean, responsive websites with HTML, CSS, and JavaScript. I love turning ideas into interactive digital experiences.</p>
                 <div class="btn-group">
-                    <button class="btn" aria-label="Download my CV"><i class="fa-solid fa-download"></i> Download CV</button>
-                    <button class="btn" aria-label="Contact me"><i class="fa-solid fa-phone"></i> Contact</button>
+                    <a href="#" id="download-cv"><button class="btn" aria-label="Download my CV"><i class="fa-solid fa-download"></i> Download CV</button></a>
+                    <a href="#contact"><button class="btn" aria-label="Contact me"><i class="fa-solid fa-phone"></i> Contact</button></a>
                 </div>
             </div>
             <div class="banner-image">
@@ -73,6 +87,75 @@
                 <div class="info-card">
                     <p>Location:</p>
                     <h4>Bangladesh</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects-container container">
+            <div class="section-heading">
+                <h2>My Recent Projects</h2>
+                <p>Here are some of the projects I've built to practice and demonstrate my frontend development skills. Each project showcases different aspects of web development from responsive design to JavaScript interactivity.</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-1.jpg" alt="Personal Portfolio Website Project" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Crect width=%27400%27 height=%27300%27 fill=%27%23FFF8F3%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2724%27 fill=%27%23FD6E0A%27%3EPortfolio Project%3C/text%3E%3C/svg%3E'">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View live demo"><i class="fa-solid fa-external-link"></i></a>
+                            <a href="#" class="project-link" aria-label="View source code"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A fully responsive personal portfolio website built with HTML, CSS, and vanilla JavaScript featuring smooth animations and modern design.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-2.jpg" alt="Interactive Landing Page Project" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Crect width=%27400%27 height=%27300%27 fill=%27%23FFF8F3%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2724%27 fill=%27%23FD6E0A%27%3ELanding Page%3C/text%3E%3C/svg%3E'">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View live demo"><i class="fa-solid fa-external-link"></i></a>
+                            <a href="#" class="project-link" aria-label="View source code"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Product Landing Page</h3>
+                        <p>Modern landing page with responsive design, smooth scroll navigation, and interactive elements. Optimized for all devices.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Flexbox</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-3.jpg" alt="JavaScript Web Application Project" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Crect width=%27400%27 height=%27300%27 fill=%27%23FFF8F3%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2724%27 fill=%27%23FD6E0A%27%3EJS Application%3C/text%3E%3C/svg%3E'">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View live demo"><i class="fa-solid fa-external-link"></i></a>
+                            <a href="#" class="project-link" aria-label="View source code"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Interactive Web App</h3>
+                        <p>JavaScript-powered web application featuring dynamic content, form validation, and local storage for data persistence.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">DOM</span>
+                            <span class="tag">ES6+</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -170,7 +253,7 @@
     </section>
 
 
-    <footer>
+    <footer id="contact">
         <section class="footer-container container">
             <div class="social">
                 <h2>Let's Connect</h2>
@@ -182,7 +265,7 @@
                     <a href="#" aria-label="Visit my Instagram profile"><img src="images/icons/insta.png" alt="Instagram icon"></a>
                 </div>
             </div>
-            <form class="form">
+            <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                 <h2>Send Me a Message</h2>
                 <div>
                     <label for="contact-name" class="hide">Your Name</label>
@@ -201,8 +284,6 @@
         </section>
     </footer>
 
-
-
+    <script src="scripts/main.js"></script>
 </body>
-
 </html>
