@@ -228,6 +228,10 @@ img {
     text-align: center;
 }
 
+#resume .text-center {
+    margin-bottom: 80px;
+}
+
 .container {
     width: 71%;
     max-width: 1140px;
@@ -442,6 +446,10 @@ nav .menu a.active::after {
 #technologies,
 #contact-info {
     padding-top: 130px;
+}
+
+#resume {
+    padding-top: 80px;
 }
 
 /* Technologies Section */
