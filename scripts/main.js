@@ -278,16 +278,113 @@ document.addEventListener('DOMContentLoaded', () => {
 // Download CV functionality - CV is now linked directly in HTML
 // No JavaScript needed as the download attribute handles it
 
-// Form submission handling
-const contactForm = document.querySelector('.form');
+// Form submission handling with validation
+const contactForm = document.getElementById('contact-form');
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        // Note: Form will submit to Formspree when you add your form ID
-        // For now, we'll just show a message
+    const nameInput = document.getElementById('contact-name');
+    const emailInput = document.getElementById('contact-email');
+    const messageInput = document.getElementById('contact-message');
+    const formStatus = document.getElementById('form-status');
+    const btnText = document.querySelector('.btn-text');
+    const btnLoader = document.querySelector('.btn-loader');
+
+    // Real-time validation
+    function validateName() {
+        const nameError = document.getElementById('name-error');
+        if (nameInput.value.trim().length < 2) {
+            nameInput.classList.add('invalid');
+            nameError.textContent = 'Name must be at least 2 characters';
+            return false;
+        } else {
+            nameInput.classList.remove('invalid');
+            nameError.textContent = '';
+            return true;
+        }
+    }
+
+    function validateEmail() {
+        const emailError = document.getElementById('email-error');
+        const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+        if (!emailPattern.test(emailInput.value)) {
+            emailInput.classList.add('invalid');
+            emailError.textContent = 'Please enter a valid email address';
+            return false;
+        } else {
+            emailInput.classList.remove('invalid');
+            emailError.textContent = '';
+            return true;
+        }
+    }
+
+    function validateMessage() {
+        const messageError = document.getElementById('message-error');
+        if (messageInput.value.trim().length < 10) {
+            messageInput.classList.add('invalid');
+            messageError.textContent = 'Message must be at least 10 characters';
+            return false;
+        } else {
+            messageInput.classList.remove('invalid');
+            messageError.textContent = '';
+            return true;
+        }
+    }
+
+    // Add event listeners for real-time validation
+    nameInput.addEventListener('blur', validateName);
+    emailInput.addEventListener('blur', validateEmail);
+    messageInput.addEventListener('blur', validateMessage);
+
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Validate all fields
+        const isNameValid = validateName();
+        const isEmailValid = validateEmail();
+        const isMessageValid = validateMessage();
+
+        if (!isNameValid || !isEmailValid || !isMessageValid) {
+            formStatus.className = 'form-status error';
+            formStatus.textContent = 'Please fix the errors above before submitting.';
+            return;
+        }
+
+        // Check if Formspree is configured
         const formAction = contactForm.getAttribute('action');
         if (formAction.includes('YOUR_FORM_ID')) {
-            e.preventDefault();
-            alert('Please set up Formspree:\n\n1. Go to https://formspree.io/\n2. Sign up for free\n3. Create a new form\n4. Replace YOUR_FORM_ID in the form action with your actual Form ID');
+            formStatus.className = 'form-status error';
+            formStatus.innerHTML = '<strong>Setup Required:</strong> Please configure Formspree by visiting <a href="https://formspree.io/" target="_blank" rel="noopener">formspree.io</a> and replacing YOUR_FORM_ID in the form action.';
+            return;
+        }
+
+        // Show loading state
+        btnText.style.display = 'none';
+        btnLoader.style.display = 'inline-flex';
+        formStatus.style.display = 'none';
+
+        try {
+            const formData = new FormData(contactForm);
+            const response = await fetch(formAction, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                formStatus.className = 'form-status success';
+                formStatus.textContent = '✓ Thank you! Your message has been sent successfully.';
+                contactForm.reset();
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            formStatus.className = 'form-status error';
+            formStatus.textContent = '✗ Oops! There was a problem sending your message. Please try again.';
+        } finally {
+            // Reset button state
+            btnText.style.display = 'inline';
+            btnLoader.style.display = 'none';
         }
     });
 }

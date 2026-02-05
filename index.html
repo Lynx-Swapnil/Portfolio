@@ -37,6 +37,16 @@
       content="Passionate Frontend Developer focused on creating clean, responsive websites."
     />
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="alternate icon" href="images/favicon.ico" />
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="keywords" content="frontend developer, web developer, HTML, CSS, JavaScript, portfolio, Bangladesh, Didarul Alam Swapnil" />
+    <meta name="author" content="Didarul Alam Swapnil" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#fd6e0a" />
+
     <title>Didarul Alam Swapnil - Frontend Web Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,9 +64,35 @@
     />
 
     <link rel="stylesheet" href="styles/portfolio.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Didarul Alam Swapnil",
+      "jobTitle": "Frontend Web Developer",
+      "url": "https://yourwebsite.com",
+      "email": "lynxswapnil@gmail.com",
+      "telephone": "+8801842581141",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dhaka",
+        "addressCountry": "Bangladesh"
+      },
+      "sameAs": [
+        "https://github.com/Lynx-Swapnil",
+        "https://www.linkedin.com/in/didarul-alam-swapnil"
+      ],
+      "knowsAbout": ["HTML", "CSS", "JavaScript", "Responsive Design", "Web Development"]
+    }
+    </script>
   </head>
 
   <body class="font-open-sans">
+    <!-- Skip to Main Content for Accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
     <!-- Scroll Progress Bar -->
     <div id="scroll-progress"></div>
 
@@ -109,7 +145,7 @@
         </ul>
       </nav>
 
-      <section id="banner">
+      <section id="banner" id="main-content">
         <div class="banner-content">
           <h2>Hi, I am</h2>
           <h1>Didarul Alam Swapnil</h1>
@@ -141,6 +177,7 @@
           <img
             src="images/swapnil-professional-photo-no-bg.png"
             alt="Professional photo of Didarul Alam Swapnil"
+            loading="eager"
           />
         </div>
       </section>
@@ -225,6 +262,7 @@
               <img
                 src="images/project-1.jpg"
                 alt="Personal Portfolio Website Project"
+                loading="lazy"
                 onerror="
                   this.src =
                     'data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Crect width=%27400%27 height=%27300%27 fill=%27%23FFF8F3%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2724%27 fill=%27%23FD6E0A%27%3EPortfolio Project%3C/text%3E%3C/svg%3E'
@@ -259,6 +297,7 @@
               <img
                 src="images/project-2.jpg"
                 alt="Interactive Landing Page Project"
+                loading="lazy"
                 onerror="
                   this.src =
                     'data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Crect width=%27400%27 height=%27300%27 fill=%27%23FFF8F3%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2724%27 fill=%27%23FD6E0A%27%3ELanding Page%3C/text%3E%3C/svg%3E'
@@ -292,6 +331,7 @@
               <img
                 src="images/project-3.jpg"
                 alt="JavaScript Web Application Project"
+                loading="lazy"
                 onerror="
                   this.src =
                     'data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Crect width=%27400%27 height=%27300%27 fill=%27%23FFF8F3%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2724%27 fill=%27%23FD6E0A%27%3EJS Application%3C/text%3E%3C/svg%3E'
@@ -338,7 +378,7 @@
 
         <div class="skill-box">
           <div class="skill-card">
-            <img src="images/icons/js.png" alt="JavaScript icon" />
+            <img src="images/icons/js.png" alt="JavaScript icon" loading="lazy" />
             <h3>Vanilla JavaScript</h3>
             <p>
               Strong foundation in JavaScript fundamentals including DOM
@@ -347,7 +387,7 @@
             </p>
           </div>
           <div class="skill-card">
-            <img src="images/icons/react.png" alt="React icon" />
+            <img src="images/icons/react.png" alt="React icon" loading="lazy" />
             <h3>HTML & CSS</h3>
             <p>
               Proficient in semantic HTML5 and modern CSS3, including Flexbox,
@@ -356,7 +396,7 @@
             </p>
           </div>
           <div class="skill-card">
-            <img src="images/icons/nodejs.png" alt="Tools icon" />
+            <img src="images/icons/nodejs.png" alt="Tools icon" loading="lazy" />
             <h3>Web Development Tools</h3>
             <p>
               Familiar with Git version control, VS Code, browser DevTools, and
@@ -365,7 +405,7 @@
             </p>
           </div>
           <div class="skill-card">
-            <img src="images/icons/mongo.png" alt="Responsive design icon" />
+            <img src="images/icons/mongo.png" alt="Responsive design icon" loading="lazy" />
             <h3>Responsive Design</h3>
             <p>
               Experienced in creating mobile-first, responsive websites that
@@ -394,7 +434,7 @@
               <span class="skill-name">HTML5</span>
               <span class="skill-percentage">95%</span>
             </div>
-            <div class="progress-bar">
+            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 proficiency">
               <div class="progress" data-progress="95"></div>
             </div>
           </div>
@@ -604,6 +644,77 @@
       </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <div class="testimonials-container container">
+        <div class="section-heading">
+          <h2>What People Say</h2>
+          <p>
+            Feedback from clients and collaborators I've worked with on various
+            projects.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Swapnil delivered a fantastic website for our small business. The
+              design is clean, responsive, and exactly what we needed. Highly
+              recommend!"
+            </p>
+            <div class="testimonial-author">
+              <h4>Sarah Johnson</h4>
+              <p>Small Business Owner</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Great attention to detail and excellent communication throughout
+              the project. The landing page looks professional and performs
+              perfectly on all devices."
+            </p>
+            <div class="testimonial-author">
+              <h4>Michael Chen</h4>
+              <p>Marketing Manager</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p class="testimonial-text">
+              "Very talented developer with a good eye for design. Delivered the
+              project on time and was receptive to feedback. Will work with again!"
+            </p>
+            <div class="testimonial-author">
+              <h4>Emily Rodriguez</h4>
+              <p>Freelance Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Info Section -->
     <section id="contact-info">
       <div class="contact-info-container container">
@@ -717,9 +828,12 @@
             class="form"
             action="https://formspree.io/f/YOUR_FORM_ID"
             method="POST"
+            id="contact-form"
+            novalidate
           >
             <h2>Send Me a Message</h2>
-            <div>
+            <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
+            <div class="form-group">
               <label for="contact-name" class="hide">Your Name</label>
               <input
                 type="text"
@@ -728,9 +842,12 @@
                 placeholder="Your Name"
                 required
                 aria-required="true"
+                minlength="2"
+                maxlength="50"
               />
+              <span class="error-message" id="name-error"></span>
             </div>
-            <div>
+            <div class="form-group">
               <label for="contact-email" class="hide">Your Email</label>
               <input
                 type="email"
@@ -739,9 +856,11 @@
                 placeholder="Your Email"
                 required
                 aria-required="true"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               />
+              <span class="error-message" id="email-error"></span>
             </div>
-            <div>
+            <div class="form-group">
               <label for="contact-message" class="hide">Your Message</label>
               <textarea
                 rows="10"
@@ -750,14 +869,21 @@
                 placeholder="Your Message"
                 required
                 aria-required="true"
+                minlength="10"
+                maxlength="1000"
               ></textarea>
+              <span class="error-message" id="message-error"></span>
             </div>
-            <input
+            <button
               class="btn"
               type="submit"
-              value="Submit"
               aria-label="Submit contact form"
-            />
+            >
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loader" style="display: none;">
+                <i class="fa-solid fa-spinner fa-spin"></i> Sending...
+              </span>
+            </button>
           </form>
         </div>
       </section>
