@@ -1,37 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+    />
+    <meta
+      name="description"
+      content="Didarul Alam Swapnil - Frontend Web Developer specializing in HTML, CSS, and JavaScript. View my portfolio of responsive web projects."
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <meta name="description" content="Didarul Alam Swapnil - Frontend Web Developer specializing in HTML, CSS, and JavaScript. View my portfolio of responsive web projects.">
-    
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Didarul Alam Swapnil - Frontend Web Developer">
-    <meta property="og:description" content="Passionate Frontend Developer focused on creating clean, responsive websites with HTML, CSS, and JavaScript.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="images/swapnil-professional-photo-no-bg.png">
-    
+    <meta
+      property="og:title"
+      content="Didarul Alam Swapnil - Frontend Web Developer"
+    />
+    <meta
+      property="og:description"
+      content="Passionate Frontend Developer focused on creating clean, responsive websites with HTML, CSS, and JavaScript."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="images/swapnil-professional-photo-no-bg.png"
+    />
+
     <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Didarul Alam Swapnil - Frontend Web Developer">
-    <meta name="twitter:description" content="Passionate Frontend Developer focused on creating clean, responsive websites.">
-    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Didarul Alam Swapnil - Frontend Web Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Passionate Frontend Developer focused on creating clean, responsive websites."
+    />
+
     <title>Didarul Alam Swapnil - Frontend Web Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="styles/portfolio.css">
-</head>
+    <link rel="stylesheet" href="styles/portfolio.css" />
+  </head>
 
-<body class="font-open-sans">
-
+  <body class="font-open-sans">
     <!-- Scroll Progress Bar -->
     <div id="scroll-progress"></div>
 
@@ -40,513 +65,715 @@
 
     <!-- Preloader -->
     <div id="preloader">
-        <div class="loader">
-            <h2>Swap<span class="color-orange">n</span>il</h2>
-            <div class="loading-bar"></div>
-        </div>
+      <div class="loader">
+        <h2>Swap<span class="color-orange">n</span>il</h2>
+        <div class="loading-bar"></div>
+      </div>
     </div>
 
     <header>
-        <nav class="container">
-            <div class="logo">
-                <h2>Swap<span class="color-orange">n</span>il</h2>
+      <nav class="container">
+        <div class="logo">
+          <h2>Swap<span class="color-orange">n</span>il</h2>
+        </div>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="menu">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li>
+            <div class="theme-switch-wrapper">
+              <span id="theme-label" class="theme-label">Light Mode</span>
+              <label class="theme-switch" for="theme-toggle">
+                <input type="checkbox" id="theme-toggle" />
+                <span class="slider"></span>
+              </label>
             </div>
+          </li>
+          <li>
+            <a href="#contact"
+              ><button
+                class="btn"
+                aria-label="Contact me for work opportunities"
+              >
+                Contact Me
+              </button></a
+            >
+          </li>
+        </ul>
+      </nav>
 
-            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <ul class="menu">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li>
-                    <div class="theme-switch-wrapper">
-                        <span id="theme-label" class="theme-label">Light Mode</span>
-                        <label class="theme-switch" for="theme-toggle">
-                            <input type="checkbox" id="theme-toggle" />
-                            <span class="slider"></span>
-                        </label>
-                    </div>
-                </li>
-                <li><a href="#contact"><button class="btn" aria-label="Contact me for work opportunities">Contact Me</button></a></li>
-            </ul>
-        </nav>
-
-        <section id="banner">
-            <div class="banner-content">
-                <h2>Hi, I am</h2>
-                <h1>Didarul Alam Swapnil</h1>
-                <p class="typing-container">
-                    <span class="typing-text"></span>
-                    <span class="typing-cursor">|</span>
-                </p>
-                <p class="banner-description">A passionate Frontend Web Developer focused on creating clean, responsive websites with HTML, CSS, and JavaScript. I love turning ideas into interactive digital experiences.</p>
-                <div class="btn-group">
-                    <a href="assets/Didarul_Alam_Swapnil_CV.pdf" download="Didarul_Alam_Swapnil_CV.pdf"><button class="btn" aria-label="Download my CV"><i class="fa-solid fa-download"></i> Download CV</button></a>
-                    <a href="#contact"><button class="btn" aria-label="Contact me"><i class="fa-solid fa-phone"></i> Contact</button></a>
-                </div>
-            </div>
-            <div class="banner-image">
-                <img src="images/swapnil-professional-photo-no-bg.png" alt="Professional photo of Didarul Alam Swapnil">
-            </div>
-        </section>
-
+      <section id="banner">
+        <div class="banner-content">
+          <h2>Hi, I am</h2>
+          <h1>Didarul Alam Swapnil</h1>
+          <p class="typing-container">
+            <span class="typing-text"></span>
+            <span class="typing-cursor">|</span>
+          </p>
+          <p class="banner-description">
+            A passionate Frontend Web Developer focused on creating clean,
+            responsive websites with HTML, CSS, and JavaScript. I love turning
+            ideas into interactive digital experiences.
+          </p>
+          <div class="btn-group">
+            <a
+              href="assets/Didarul_Alam_Swapnil_CV.pdf"
+              download="Didarul_Alam_Swapnil_CV.pdf"
+              ><button class="btn" aria-label="Download my CV">
+                <i class="fa-solid fa-download"></i> Download CV
+              </button></a
+            >
+            <a href="#contact"
+              ><button class="btn" aria-label="Contact me">
+                <i class="fa-solid fa-phone"></i> Contact
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="banner-image">
+          <img
+            src="images/swapnil-professional-photo-no-bg.png"
+            alt="Professional photo of Didarul Alam Swapnil"
+          />
+        </div>
+      </section>
     </header>
 
     <!-- Statistics Section -->
     <section id="stats">
-        <div class="stats-container container">
-            <div class="stat-item">
-                <i class="fa-solid fa-code"></i>
-                <h3 class="stat-number" data-target="15">0</h3>
-                <p>Projects Completed</p>
-            </div>
-            <div class="stat-item">
-                <i class="fa-solid fa-laptop-code"></i>
-                <h3 class="stat-number" data-target="3">0</h3>
-                <p>Years Experience</p>
-            </div>
-            <div class="stat-item">
-                <i class="fa-solid fa-layer-group"></i>
-                <h3 class="stat-number" data-target="10">0</h3>
-                <p>Technologies</p>
-            </div>
-            <div class="stat-item">
-                <i class="fa-solid fa-mug-hot"></i>
-                <h3 class="stat-number" data-target="500">0</h3>
-                <p>Cups of Coffee</p>
-            </div>
+      <div class="stats-container container">
+        <div class="stat-item">
+          <i class="fa-solid fa-code"></i>
+          <h3 class="stat-number" data-target="15">0</h3>
+          <p>Projects Completed</p>
         </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h3 class="stat-number" data-target="3">0</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-layer-group"></i>
+          <h3 class="stat-number" data-target="10">0</h3>
+          <p>Technologies</p>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-mug-hot"></i>
+          <h3 class="stat-number" data-target="500">0</h3>
+          <p>Cups of Coffee</p>
+        </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <div class="about-container container">
-            <div class="section-heading">
-                <h2>About Me</h2>
-                <p>I'm a self-taught frontend developer with a passion for web design and development. I enjoy building responsive, user-friendly websites using HTML, CSS, and JavaScript. I'm constantly learning new technologies and best practices to improve my skills and create better digital experiences.</p>
-            </div>
-            <div class="about-info">
-                <div class="info-card">
-                    <p>Name:</p>
-                    <h4>Didarul Alam Swapnil</h4>
-                </div>
-                <div class="info-card">
-                    <p>Email:</p>
-                    <h4>lynxswapnil@gmail.com</h4>
-                </div>
-                <div class="info-card">
-                    <p>Specialty:</p>
-                    <h4>Frontend Development</h4>
-                </div>
-                <div class="info-card">
-                    <p>Location:</p>
-                    <h4>Bangladesh</h4>
-                </div>
-            </div>
+      <div class="about-container container">
+        <div class="section-heading">
+          <h2>About Me</h2>
+          <p>
+            I'm a self-taught frontend developer with a passion for web design
+            and development. I enjoy building responsive, user-friendly websites
+            using HTML, CSS, and JavaScript. I'm constantly learning new
+            technologies and best practices to improve my skills and create
+            better digital experiences.
+          </p>
         </div>
+        <div class="about-info">
+          <div class="info-card">
+            <p>Name:</p>
+            <h4>Didarul Alam Swapnil</h4>
+          </div>
+          <div class="info-card">
+            <p>Email:</p>
+            <h4>lynxswapnil@gmail.com</h4>
+          </div>
+          <div class="info-card">
+            <p>Specialty:</p>
+            <h4>Frontend Development</h4>
+          </div>
+          <div class="info-card">
+            <p>Location:</p>
+            <h4>Bangladesh</h4>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <div class="projects-container container">
-            <div class="section-heading">
-                <h2>My Recent Projects</h2>
-                <p>Here are some of the projects I've built to practice and demonstrate my frontend development skills. Each project showcases different aspects of web development from responsive design to JavaScript interactivity.</p>
-            </div>
-
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project-1.jpg" alt="Personal Portfolio Website Project" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Crect width=%27400%27 height=%27300%27 fill=%27%23FFF8F3%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2724%27 fill=%27%23FD6E0A%27%3EPortfolio Project%3C/text%3E%3C/svg%3E'">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link" aria-label="View live demo"><i class="fa-solid fa-external-link"></i></a>
-                            <a href="#" class="project-link" aria-label="View source code"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Portfolio Website</h3>
-                        <p>A fully responsive personal portfolio website built with HTML, CSS, and vanilla JavaScript featuring smooth animations and modern design.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project-2.jpg" alt="Interactive Landing Page Project" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Crect width=%27400%27 height=%27300%27 fill=%27%23FFF8F3%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2724%27 fill=%27%23FD6E0A%27%3ELanding Page%3C/text%3E%3C/svg%3E'">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link" aria-label="View live demo"><i class="fa-solid fa-external-link"></i></a>
-                            <a href="#" class="project-link" aria-label="View source code"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Product Landing Page</h3>
-                        <p>Modern landing page with responsive design, smooth scroll navigation, and interactive elements. Optimized for all devices.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">Flexbox</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project-3.jpg" alt="JavaScript Web Application Project" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Crect width=%27400%27 height=%27300%27 fill=%27%23FFF8F3%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2724%27 fill=%27%23FD6E0A%27%3EJS Application%3C/text%3E%3C/svg%3E'">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link" aria-label="View live demo"><i class="fa-solid fa-external-link"></i></a>
-                            <a href="#" class="project-link" aria-label="View source code"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Interactive Web App</h3>
-                        <p>JavaScript-powered web application featuring dynamic content, form validation, and local storage for data persistence.</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">DOM</span>
-                            <span class="tag">ES6+</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="projects-container container">
+        <div class="section-heading">
+          <h2>My Recent Projects</h2>
+          <p>
+            Here are some of the projects I've built to practice and demonstrate
+            my frontend development skills. Each project showcases different
+            aspects of web development from responsive design to JavaScript
+            interactivity.
+          </p>
         </div>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/project-1.jpg"
+                alt="Personal Portfolio Website Project"
+                onerror="
+                  this.src =
+                    'data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Crect width=%27400%27 height=%27300%27 fill=%27%23FFF8F3%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2724%27 fill=%27%23FD6E0A%27%3EPortfolio Project%3C/text%3E%3C/svg%3E'
+                "
+              />
+              <div class="project-overlay">
+                <a href="#" class="project-link" aria-label="View live demo"
+                  ><i class="fa-solid fa-external-link"></i
+                ></a>
+                <a href="#" class="project-link" aria-label="View source code"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Portfolio Website</h3>
+              <p>
+                A fully responsive personal portfolio website built with HTML,
+                CSS, and vanilla JavaScript featuring smooth animations and
+                modern design.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/project-2.jpg"
+                alt="Interactive Landing Page Project"
+                onerror="
+                  this.src =
+                    'data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Crect width=%27400%27 height=%27300%27 fill=%27%23FFF8F3%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2724%27 fill=%27%23FD6E0A%27%3ELanding Page%3C/text%3E%3C/svg%3E'
+                "
+              />
+              <div class="project-overlay">
+                <a href="#" class="project-link" aria-label="View live demo"
+                  ><i class="fa-solid fa-external-link"></i
+                ></a>
+                <a href="#" class="project-link" aria-label="View source code"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Product Landing Page</h3>
+              <p>
+                Modern landing page with responsive design, smooth scroll
+                navigation, and interactive elements. Optimized for all devices.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Flexbox</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/project-3.jpg"
+                alt="JavaScript Web Application Project"
+                onerror="
+                  this.src =
+                    'data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Crect width=%27400%27 height=%27300%27 fill=%27%23FFF8F3%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2724%27 fill=%27%23FD6E0A%27%3EJS Application%3C/text%3E%3C/svg%3E'
+                "
+              />
+              <div class="project-overlay">
+                <a href="#" class="project-link" aria-label="View live demo"
+                  ><i class="fa-solid fa-external-link"></i
+                ></a>
+                <a href="#" class="project-link" aria-label="View source code"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Interactive Web App</h3>
+              <p>
+                JavaScript-powered web application featuring dynamic content,
+                form validation, and local storage for data persistence.
+              </p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">DOM</span>
+                <span class="tag">ES6+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
-        <div class="skills-container container">
-            <div class="section-heading">
-                <h2>What I Do</h2>
-                <p>As a frontend developer, I focus on building responsive and interactive websites. I'm comfortable with core web technologies and continuously expanding my skillset. Here's a quick overview of my main technical skills and the technologies I work with.</p>
-            </div>
-
-            <div class="skill-box">
-                <div class="skill-card">
-                    <img src="images/icons/js.png" alt="JavaScript icon">
-                    <h3>Vanilla JavaScript</h3>
-                    <p>Strong foundation in JavaScript fundamentals including DOM manipulation, event handling, ES6+ features, and building interactive user interfaces without frameworks.</p>
-                </div>
-                <div class="skill-card">
-                    <img src="images/icons/react.png" alt="React icon">
-                    <h3>HTML & CSS</h3>
-                    <p>Proficient in semantic HTML5 and modern CSS3, including Flexbox, Grid, responsive design, and creating pixel-perfect layouts that work across all devices.</p>
-                </div>
-                <div class="skill-card">
-                    <img src="images/icons/nodejs.png" alt="Tools icon">
-                    <h3>Web Development Tools</h3>
-                    <p>Familiar with Git version control, VS Code, browser DevTools, and modern web development workflows to build and debug projects efficiently.</p>
-                </div>
-                <div class="skill-card">
-                    <img src="images/icons/mongo.png" alt="Responsive design icon">
-                    <h3>Responsive Design</h3>
-                    <p>Experienced in creating mobile-first, responsive websites that provide great user experience across different screen sizes and devices.</p>
-                </div>
-            </div>
+      <div class="skills-container container">
+        <div class="section-heading">
+          <h2>What I Do</h2>
+          <p>
+            As a frontend developer, I focus on building responsive and
+            interactive websites. I'm comfortable with core web technologies and
+            continuously expanding my skillset. Here's a quick overview of my
+            main technical skills and the technologies I work with.
+          </p>
         </div>
+
+        <div class="skill-box">
+          <div class="skill-card">
+            <img src="images/icons/js.png" alt="JavaScript icon" />
+            <h3>Vanilla JavaScript</h3>
+            <p>
+              Strong foundation in JavaScript fundamentals including DOM
+              manipulation, event handling, ES6+ features, and building
+              interactive user interfaces without frameworks.
+            </p>
+          </div>
+          <div class="skill-card">
+            <img src="images/icons/react.png" alt="React icon" />
+            <h3>HTML & CSS</h3>
+            <p>
+              Proficient in semantic HTML5 and modern CSS3, including Flexbox,
+              Grid, responsive design, and creating pixel-perfect layouts that
+              work across all devices.
+            </p>
+          </div>
+          <div class="skill-card">
+            <img src="images/icons/nodejs.png" alt="Tools icon" />
+            <h3>Web Development Tools</h3>
+            <p>
+              Familiar with Git version control, VS Code, browser DevTools, and
+              modern web development workflows to build and debug projects
+              efficiently.
+            </p>
+          </div>
+          <div class="skill-card">
+            <img src="images/icons/mongo.png" alt="Responsive design icon" />
+            <h3>Responsive Design</h3>
+            <p>
+              Experienced in creating mobile-first, responsive websites that
+              provide great user experience across different screen sizes and
+              devices.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Skills Progress Section -->
     <section id="skills-progress">
-        <div class="skills-progress-container container">
-            <div class="section-heading">
-                <h2>My Skills</h2>
-                <p>Here's a breakdown of my technical proficiency across different frontend technologies and tools.</p>
-            </div>
-
-            <div class="skills-bars">
-                <div class="skill-bar-item">
-                    <div class="skill-info">
-                        <span class="skill-name">HTML5</span>
-                        <span class="skill-percentage">95%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" data-progress="95"></div>
-                    </div>
-                </div>
-
-                <div class="skill-bar-item">
-                    <div class="skill-info">
-                        <span class="skill-name">CSS3 & Responsive Design</span>
-                        <span class="skill-percentage">90%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" data-progress="90"></div>
-                    </div>
-                </div>
-
-                <div class="skill-bar-item">
-                    <div class="skill-info">
-                        <span class="skill-name">JavaScript (ES6+)</span>
-                        <span class="skill-percentage">80%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" data-progress="80"></div>
-                    </div>
-                </div>
-
-                <div class="skill-bar-item">
-                    <div class="skill-info">
-                        <span class="skill-name">Git & Version Control</span>
-                        <span class="skill-percentage">85%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" data-progress="85"></div>
-                    </div>
-                </div>
-
-                <div class="skill-bar-item">
-                    <div class="skill-info">
-                        <span class="skill-name">Figma & Web Design</span>
-                        <span class="skill-percentage">75%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" data-progress="75"></div>
-                    </div>
-                </div>
-
-                <div class="skill-bar-item">
-                    <div class="skill-info">
-                        <span class="skill-name">Bootstrap & Tailwind</span>
-                        <span class="skill-percentage">70%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" data-progress="70"></div>
-                    </div>
-                </div>
-            </div>
+      <div class="skills-progress-container container">
+        <div class="section-heading">
+          <h2>My Skills</h2>
+          <p>
+            Here's a breakdown of my technical proficiency across different
+            frontend technologies and tools.
+          </p>
         </div>
+
+        <div class="skills-bars">
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span class="skill-name">HTML5</span>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" data-progress="95"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span class="skill-name">CSS3 & Responsive Design</span>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" data-progress="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span class="skill-name">JavaScript (ES6+)</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" data-progress="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span class="skill-name">Git & Version Control</span>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" data-progress="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span class="skill-name">Figma & Web Design</span>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" data-progress="75"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span class="skill-name">Bootstrap & Tailwind</span>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" data-progress="70"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Technologies Section -->
     <section id="technologies">
-        <div class="technologies-container container">
-            <div class="section-heading">
-                <h2>Technologies & Tools</h2>
-                <p>The technologies and tools I use daily to bring ideas to life and build amazing web experiences.</p>
-            </div>
-
-            <div class="tech-grid">
-                <div class="tech-item">
-                    <i class="fa-brands fa-html5"></i>
-                    <h4>HTML5</h4>
-                </div>
-                <div class="tech-item">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <h4>CSS3</h4>
-                </div>
-                <div class="tech-item">
-                    <i class="fa-brands fa-js"></i>
-                    <h4>JavaScript</h4>
-                </div>
-                <div class="tech-item">
-                    <i class="fa-brands fa-react"></i>
-                    <h4>React</h4>
-                </div>
-                <div class="tech-item">
-                    <i class="fa-brands fa-git-alt"></i>
-                    <h4>Git</h4>
-                </div>
-                <div class="tech-item">
-                    <i class="fa-brands fa-github"></i>
-                    <h4>GitHub</h4>
-                </div>
-                <div class="tech-item">
-                    <i class="fa-brands fa-bootstrap"></i>
-                    <h4>Bootstrap</h4>
-                </div>
-                <div class="tech-item">
-                    <i class="fa-brands fa-sass"></i>
-                    <h4>Sass</h4>
-                </div>
-                <div class="tech-item">
-                    <i class="fa-brands fa-figma"></i>
-                    <h4>Figma</h4>
-                </div>
-                <div class="tech-item">
-                    <i class="fa-brands fa-npm"></i>
-                    <h4>NPM</h4>
-                </div>
-                <div class="tech-item">
-                    <i class="fa-solid fa-code"></i>
-                    <h4>VS Code</h4>
-                </div>
-                <div class="tech-item">
-                    <i class="fa-brands fa-node-js"></i>
-                    <h4>Node.js</h4>
-                </div>
-            </div>
+      <div class="technologies-container container">
+        <div class="section-heading">
+          <h2>Technologies & Tools</h2>
+          <p>
+            The technologies and tools I use daily to bring ideas to life and
+            build amazing web experiences.
+          </p>
         </div>
-    </section>
 
+        <div class="tech-grid">
+          <div class="tech-item">
+            <i class="fa-brands fa-html5"></i>
+            <h4>HTML5</h4>
+          </div>
+          <div class="tech-item">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h4>CSS3</h4>
+          </div>
+          <div class="tech-item">
+            <i class="fa-brands fa-js"></i>
+            <h4>JavaScript</h4>
+          </div>
+          <div class="tech-item">
+            <i class="fa-brands fa-react"></i>
+            <h4>React</h4>
+          </div>
+          <div class="tech-item">
+            <i class="fa-brands fa-git-alt"></i>
+            <h4>Git</h4>
+          </div>
+          <div class="tech-item">
+            <i class="fa-brands fa-github"></i>
+            <h4>GitHub</h4>
+          </div>
+          <div class="tech-item">
+            <i class="fa-brands fa-bootstrap"></i>
+            <h4>Bootstrap</h4>
+          </div>
+          <div class="tech-item">
+            <i class="fa-brands fa-sass"></i>
+            <h4>Sass</h4>
+          </div>
+          <div class="tech-item">
+            <i class="fa-brands fa-figma"></i>
+            <h4>Figma</h4>
+          </div>
+          <div class="tech-item">
+            <i class="fa-brands fa-npm"></i>
+            <h4>NPM</h4>
+          </div>
+          <div class="tech-item">
+            <i class="fa-solid fa-code"></i>
+            <h4>VS Code</h4>
+          </div>
+          <div class="tech-item">
+            <i class="fa-brands fa-node-js"></i>
+            <h4>Node.js</h4>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Resume Section -->
     <section id="resume">
-        <div class="section-heading">
-            <h2>A Summary of My Resume</h2>
+      <div class="section-heading">
+        <h2>A Summary of My Resume</h2>
+      </div>
+
+      <div class="resume-container container">
+        <div class="education">
+          <h2 class="section-title">My Learning Journey</h2>
+          <div class="resume-card">
+            <h3 class="card-title">Self-Taught Web Development</h3>
+            <p class="card-info">Online Learning Platforms / 2023 - Present</p>
+            <p class="card-text">
+              Completed comprehensive courses in HTML, CSS, and JavaScript
+              through platforms like freeCodeCamp, MDN Web Docs, and YouTube
+              tutorials. Focused on building practical projects to solidify
+              understanding.
+            </p>
+          </div>
+          <hr />
+          <div class="resume-card">
+            <h3 class="card-title">Responsive Web Design</h3>
+            <p class="card-info">freeCodeCamp Certification / 2024</p>
+            <p class="card-text">
+              Mastered CSS Flexbox, Grid, and responsive design principles.
+              Built multiple projects including landing pages, portfolios, and
+              form-based websites with mobile-first approach.
+            </p>
+          </div>
+          <hr />
+          <div class="resume-card">
+            <h3 class="card-title">JavaScript Fundamentals</h3>
+            <p class="card-info">Self-Study & Practice / 2024 - Present</p>
+            <p class="card-text">
+              Learned core JavaScript concepts including DOM manipulation, event
+              handling, ES6+ syntax, asynchronous programming, and building
+              interactive web applications.
+            </p>
+          </div>
+          <hr />
         </div>
 
-        <div class="resume-container container">
-            <div class="education">
-                <h2 class="section-title">My Learning Journey</h2>
-                <div class="resume-card">
-                    <h3 class="card-title">Self-Taught Web Development</h3>
-                    <p class="card-info">Online Learning Platforms / 2023 - Present</p>
-                    <p class="card-text">Completed comprehensive courses in HTML, CSS, and JavaScript through platforms like freeCodeCamp, MDN Web Docs, and YouTube tutorials. Focused on building practical projects to solidify understanding.</p>
-                </div>
-                <hr>
-                <div class="resume-card">
-                    <h3 class="card-title">Responsive Web Design</h3>
-                    <p class="card-info">freeCodeCamp Certification / 2024</p>
-                    <p class="card-text">Mastered CSS Flexbox, Grid, and responsive design principles. Built multiple projects including landing pages, portfolios, and form-based websites with mobile-first approach.</p>
-                </div>
-                <hr>
-                <div class="resume-card">
-                    <h3 class="card-title">JavaScript Fundamentals</h3>
-                    <p class="card-info">Self-Study & Practice / 2024 - Present</p>
-                    <p class="card-text">Learned core JavaScript concepts including DOM manipulation, event handling, ES6+ syntax, asynchronous programming, and building interactive web applications.</p>
-                </div>
-                <hr>
-            </div>
-            
-            <div class="experience">
-                <h2 class="section-title">Projects & Practice</h2>
-                <div class="resume-card">
-                    <h3 class="card-title">Personal Portfolio Website</h3>
-                    <p class="card-info">Personal Project / 2024</p>
-                    <p class="card-text">Designed and developed a fully responsive portfolio website using HTML, CSS, and JavaScript. Implemented smooth navigation, form validation, and optimized for performance and accessibility.</p>
-                </div>
-                <hr>
-                <div class="resume-card">
-                    <h3 class="card-title">Interactive Landing Pages</h3>
-                    <p class="card-info">Practice Projects / 2024</p>
-                    <p class="card-text">Created multiple landing pages with modern design, responsive layouts, and interactive elements. Focused on clean code, semantic HTML, and cross-browser compatibility.</p>
-                </div>
-                <hr>
-                <div class="resume-card">
-                    <h3 class="card-title">JavaScript Mini Applications</h3>
-                    <p class="card-info">Learning Projects / 2024</p>
-                    <p class="card-text">Built various JavaScript projects including calculators, to-do lists, and interactive forms to practice DOM manipulation, event handling, and problem-solving skills.</p>
-                </div>
-                <hr>
-            </div>
+        <div class="experience">
+          <h2 class="section-title">Projects & Practice</h2>
+          <div class="resume-card">
+            <h3 class="card-title">Personal Portfolio Website</h3>
+            <p class="card-info">Personal Project / 2024</p>
+            <p class="card-text">
+              Designed and developed a fully responsive portfolio website using
+              HTML, CSS, and JavaScript. Implemented smooth navigation, form
+              validation, and optimized for performance and accessibility.
+            </p>
+          </div>
+          <hr />
+          <div class="resume-card">
+            <h3 class="card-title">Interactive Landing Pages</h3>
+            <p class="card-info">Practice Projects / 2024</p>
+            <p class="card-text">
+              Created multiple landing pages with modern design, responsive
+              layouts, and interactive elements. Focused on clean code, semantic
+              HTML, and cross-browser compatibility.
+            </p>
+          </div>
+          <hr />
+          <div class="resume-card">
+            <h3 class="card-title">JavaScript Mini Applications</h3>
+            <p class="card-info">Learning Projects / 2024</p>
+            <p class="card-text">
+              Built various JavaScript projects including calculators, to-do
+              lists, and interactive forms to practice DOM manipulation, event
+              handling, and problem-solving skills.
+            </p>
+          </div>
+          <hr />
         </div>
+      </div>
 
-        <div class="text-center">
-            <a href="assets/Didarul_Alam_Swapnil_CV.pdf" download="Didarul_Alam_Swapnil_CV.pdf"><button class="btn" aria-label="Download my CV as PDF"><i class="fa-solid fa-download"></i> Download CV</button></a>
-        </div>
+      <div class="text-center">
+        <a
+          href="assets/Didarul_Alam_Swapnil_CV.pdf"
+          download="Didarul_Alam_Swapnil_CV.pdf"
+          ><button class="btn" aria-label="Download my CV as PDF">
+            <i class="fa-solid fa-download"></i> Download CV
+          </button></a
+        >
+      </div>
     </section>
 
     <!-- Contact Info Section -->
     <section id="contact-info">
-        <div class="contact-info-container container">
-            <div class="section-heading">
-                <h2>Get In Touch</h2>
-                <p>Feel free to reach out to me through any of these channels. I'm always open to discussing new projects and opportunities.</p>
-            </div>
-
-            <div class="contact-cards">
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </div>
-                    <h3>LinkedIn</h3>
-                    <p>Connect with me</p>
-                    <a href="https://www.linkedin.com/in/didarul-alam-swapnil" target="_blank" rel="noopener noreferrer" class="contact-link">View Profile</a>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <h3>Email</h3>
-                    <p>lynxswapnil@gmail.com</p>
-                    <a href="mailto:lynxswapnil@gmail.com" class="contact-link">Send Email</a>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <h3>Phone</h3>
-                    <p>+880 1842581141</p>
-                    <a href="tel:+8801842581141" class="contact-link">Call Now</a>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <h3>Location</h3>
-                    <p>Dhaka, Bangladesh</p>
-                    <a href="#" class="contact-link">View on Map</a>
-                </div>
-            </div>
+      <div class="contact-info-container container">
+        <div class="section-heading">
+          <h2>Get In Touch</h2>
+          <p>
+            Feel free to reach out to me through any of these channels. I'm
+            always open to discussing new projects and opportunities.
+          </p>
         </div>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>Connect with me</p>
+            <a
+              href="https://www.linkedin.com/in/didarul-alam-swapnil"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link"
+              >View Profile</a
+            >
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p>lynxswapnil@gmail.com</p>
+            <a href="mailto:lynxswapnil@gmail.com" class="contact-link"
+              >Send Email</a
+            >
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h3>Phone</h3>
+            <p>+880 1842581141</p>
+            <a href="tel:+8801842581141" class="contact-link">Call Now</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h3>Location</h3>
+            <p>Dhaka, Bangladesh</p>
+            <a href="#" class="contact-link">View on Map</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-
     <footer id="contact">
-        <section class="footer-container container">
-            <div class="footer-content">
-                <div class="social">
-                    <h2>Let's Connect</h2>
-                    <p>I'm currently open to new opportunities and freelance projects. Feel free to reach out through the contact form or connect with me on social media. I'll get back to you as soon as possible!</p>
+      <section class="footer-container container">
+        <div class="footer-content">
+          <div class="social">
+            <h2>Let's Connect</h2>
+            <p>
+              I'm currently open to new opportunities and freelance projects.
+              Feel free to reach out through the contact form or connect with me
+              on social media. I'll get back to you as soon as possible!
+            </p>
 
-                    <div class="icons">
-                        <a href="https://github.com/Lynx-Swapnil" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/didarul-alam-swapnil" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit my Twitter profile"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="mailto:lynxswapnil@gmail.com" aria-label="Send me an email"><i class="fa-solid fa-envelope"></i></a>
-                    </div>
+            <div class="icons">
+              <a
+                href="https://github.com/Lynx-Swapnil"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit my GitHub profile"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/didarul-alam-swapnil"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit my LinkedIn profile"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit my Twitter profile"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="mailto:lynxswapnil@gmail.com"
+                aria-label="Send me an email"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
 
-                    <div class="quick-links">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#resume">Resume</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                <h2>Send Me a Message</h2>
-                <div>
-                    <label for="contact-name" class="hide">Your Name</label>
-                    <input type="text" name="name" id="contact-name" placeholder="Your Name" required aria-required="true">
-                </div>
-                <div>
-                    <label for="contact-email" class="hide">Your Email</label>
-                    <input type="email" name="email" id="contact-email" placeholder="Your Email" required aria-required="true">
-                </div>
-                <div>
-                    <label for="contact-message" class="hide">Your Message</label>
-                    <textarea rows="10" name="message" id="contact-message" placeholder="Your Message" required aria-required="true"></textarea>
-                </div>
-                <input class="btn" type="submit" value="Submit" aria-label="Submit contact form">
-            </form>
+            <div class="quick-links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+              </ul>
             </div>
-        </section>
-        
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2026 Didarul Alam Swapnil. All rights reserved.</p>
+          </div>
+          <form
+            class="form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+          >
+            <h2>Send Me a Message</h2>
+            <div>
+              <label for="contact-name" class="hide">Your Name</label>
+              <input
+                type="text"
+                name="name"
+                id="contact-name"
+                placeholder="Your Name"
+                required
+                aria-required="true"
+              />
             </div>
+            <div>
+              <label for="contact-email" class="hide">Your Email</label>
+              <input
+                type="email"
+                name="email"
+                id="contact-email"
+                placeholder="Your Email"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div>
+              <label for="contact-message" class="hide">Your Message</label>
+              <textarea
+                rows="10"
+                name="message"
+                id="contact-message"
+                placeholder="Your Message"
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+            <input
+              class="btn"
+              type="submit"
+              value="Submit"
+              aria-label="Submit contact form"
+            />
+          </form>
         </div>
+      </section>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2026 Didarul Alam Swapnil. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <!-- Back to Top Button -->
     <button id="back-to-top" class="back-to-top" aria-label="Back to top">
-        <i class="fa-solid fa-arrow-up"></i>
+      <i class="fa-solid fa-arrow-up"></i>
     </button>
 
     <script src="scripts/main.js"></script>
-</body>
+  </body>
 </html>
