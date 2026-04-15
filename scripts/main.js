@@ -1,26 +1,6 @@
-// Dark Mode Toggle
-const themeToggle = document.getElementById('theme-toggle');
-const themeLabel = document.getElementById('theme-label');
+// Dark Mode (Always Dark)
 const htmlElement = document.documentElement;
-
-// Check for saved theme preference or default to light mode
-const currentTheme = localStorage.getItem('theme') || 'light';
-htmlElement.setAttribute('data-theme', currentTheme);
-
-// Set checkbox state and label based on current theme
-if (currentTheme === 'dark') {
-    themeToggle.checked = true;
-    themeLabel.textContent = 'Dark Mode';
-} else {
-    themeLabel.textContent = 'Light Mode';
-}
-
-themeToggle.addEventListener('change', () => {
-    const newTheme = themeToggle.checked ? 'dark' : 'light';
-    htmlElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    themeLabel.textContent = newTheme === 'dark' ? 'Dark Mode' : 'Light Mode';
-});
+htmlElement.setAttribute('data-theme', 'dark');
 
 // Mobile Menu Toggle
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
@@ -113,10 +93,11 @@ window.addEventListener('resize', updateScrollProgress);
 // Typing Effect
 const typingText = document.querySelector('.typing-text');
 const phrases = [
-    'Frontend Web Developer',
-    'UI/UX Enthusiast',
-    'Problem Solver',
-    'Lifelong Learner'
+    'Junior Full-Stack Developer',
+    'React & Next.js Developer',
+    'Node.js & Express Developer',
+    'MongoDB Enthusiast',
+    'Problem Solver'
 ];
 let phraseIndex = 0;
 let charIndex = 0;

@@ -500,7 +500,7 @@ nav .menu a.active::after {
   gap: 40px;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 #banner .banner-content {
@@ -567,6 +567,7 @@ nav .menu a.active::after {
   flex: 0 0 38%;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
 #banner .banner-image img {
@@ -574,7 +575,7 @@ nav .menu a.active::after {
   width: 100%;
   vertical-align: middle;
   object-fit: contain;
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 [data-theme="dark"] #banner .banner-image img {
@@ -589,7 +590,7 @@ nav .menu a.active::after {
     var(--accent-color) 0%,
     var(--accent-hover) 100%
   );
-  margin-top: 80px;
+  margin-top: 90px;
 }
 
 .stats-container {
@@ -1512,7 +1513,7 @@ textarea:focus-visible {
     border-radius: 20px;
     position: relative;
     overflow: hidden;
-  }
+     }
 
   #banner::before {
     content: "";
@@ -1652,7 +1653,7 @@ textarea:focus-visible {
 
   #stats {
     padding: 60px 0;
-    margin-top: 0;
+    margin-top: 50px;
   }
 
   .stats-container {
